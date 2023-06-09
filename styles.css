@@ -20,13 +20,9 @@ body {
 
 .container {
     text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100%;
+    max-width: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .logo img {
@@ -34,16 +30,22 @@ body {
     height: auto;
 }
 
+
 .login-form {
-    max-width: 340px;
-    margin: 8px;
-    padding: 15px;
+    padding: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin: 8px 12px;
 }
+
 .form-group  {
+    display: flex;
     text-align: left;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 }
 .form-group label {
     margin-bottom: 5px;
@@ -52,7 +54,7 @@ body {
 }
 
 .form-group input {
-    width: 96%;
+    width: 100%;
     min-height: 33px;
     margin: 5px 0;
     background: #FFFFFF;
@@ -61,6 +63,7 @@ body {
     border-radius: 5px;
     padding: 5px;
 }
+
 
 button {
     background-color: #009640;
@@ -79,11 +82,11 @@ button:hover {
     background-color: #015e29;
 }
 
-.forgot-password{
+.password-msg{
     padding-bottom: 5px;
 }
 
-.forgot-password a {
+.password-msg a {
     font-weight: 600;
     font-size: 14px;
     color: #0000FF;
@@ -101,4 +104,7 @@ button:hover {
     color: #0000FF;
     text-decoration: underline;
     font-weight: 600;
+}
+.icons {
+    fill: #ff0000; /* Cambia el color al rojo (#ff0000) */
 }
