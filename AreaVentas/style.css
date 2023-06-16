@@ -1,349 +1,413 @@
 body {
-    background: #FFFFFF;
-  }
+  background: #FFFFFF;
+}
+
+.ventasContenier {
+  left: 40px;
+  width: 1440px;
+  height: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+/*div para buscar por DNI*/
+.dni-buscar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1103px;
+  height: 80px;
+
+  left: 10%;
+  top: 133px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.label-buscar {
+
+  position: absolute;
+  width: 148px;
+  height: 21px;
+  left: 938px;
+  top: 57px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #224E7C;
+}
+
+/*botones para ambos buscar*/
+.botonBuscar {
+  position: relative;
+  left: -43px;
+  width: 42px;
+  height: 38px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-image: linear-gradient(160deg,
+      #2AFA23, #2EE6E3, #2AFA23);
+  transition: .3s;
+}
+
+.botonBuscar:active {
+  scale: 1.2;
+}
+
+/*la caja donde se escriben los datos*/
+.cajaEscribir {
+  position: relative;
+  width: 1004px;
+  height: 30px;
+
+  border: 1px solid #7E7474;
+  border-radius: 5px;
+}
+
+/*para ambos div*/
+.iconBuscar {
+  position: relative;
+  width: 38px;
+  height: 34px;
+  top: 1%;
+  left: -5.1px;
+  border-radius: 5px;
+}
+
+/*caja para buscar productos*/
+.productos-buscar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1103px;
+  height: 80px;
+
+  left: 10%;
+  top: 232px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+}
+
+/*botones principales*/
+.botonesEdicion {
+  position: absolute;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  width: 1119px;
+  height: 82px;
+  left: 8%;
+  top: 321px;
+}
+
+ .Añadir:active,
+.genBoleta:active {
+  scale: 1.1;
+  background-image: linear-gradient(160deg,
+      #74a886, #92D6AA, #74a886);
+  transition: .3s;
+}
+
+.eliminar:active {
+  scale: 1.1;
+  background-image: linear-gradient(160deg,
+      #aa4649, #D0565A, #a13e41);
+  transition: .3s;
+} 
+
+.Añadir {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 302px;
+  height: 57px;
+  flex-wrap: wrap;
+  border-color: #92D6AA;
+  background: #98D9AF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: 'Roboto';
+}
+.botonesEdicion img{
+  position: relative;
+  right: 50px;
   
-  /*div para buscar por DNI*/
-  .dni-buscar {
-    position: absolute;
+}
+.text-añadir,.text-boleta{
+  position: relative;
+  bottom: 20px;
+  font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 25px;
+color: #005C21;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.genBoleta {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 305px;
+  height: 62px;
+  border-color: #92D6AA;
+  background: #98D9AF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.eliminar {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 305px;
+  height: 62px;
+  border-color: #D0565A;
+  background: #D0565A;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.text-eliminar{
+  position: relative;
+  bottom: 16px;
+  font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 25px;
+color: #612b2d;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+/*Logos*/
+.logo {
+  position: absolute;
+  width: 128px;
+  height: 96px;
+  /* left: 1244px; */
+  left: 56%;
+  top: 7px;
+  border-radius: 210px;
+}
+
+.logo-tienda {
+  position: absolute;
+  width: 188px;
+  height: 170px;
+  left: 1%;
+  top: 133px;
+
+  opacity: 0.93;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.franja {
+  position: absolute;
+  width: 1319px;
+  height: 8px;
+  /* left: 67px; */
+  left: 5.4%;
+  top: 114.17px;
+  background: #000000;
+}
+
+.regClientes {
+  position: absolute;
+  width: 404px;
+  height: 54px;
+  left: 9%;
+  top: 51px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 54px;
+
+  color: #000000;
+  white-space: nowrap;
+  border-right: 4px solid;
+  animation: typing 2s steps(20),blink .5s infinite step-end alternate;
+  overflow: hidden;
+  transition: .5s;
+}
+@keyframes typing{
+  from{width: 0;}
+}
+@keyframes blink{
+  50%{border-color: transparent;}
+}
+
+
+/* inputs de abajooo*/
+
+.div-cliente {
+  position: absolute;
+  width: 659px;
+  height: 71px;
+  /* left: 434px; */
+  left: 20%;
+  /* top: 935px; */
+  top: 92%;
+}
+
+.div-total {
+  position: absolute;
+
+  width: 276px;
+  height: 72px;
+  /* left: 1116px; */
+  left: 54%;
+  top: 92%;
+}
+
+.span-abajo {
+  position: absolute;
+  width: 161.36px;
+  height: 42px;
+  left: 26px;
+  /* left: 4%; */
+  top: 12px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+
+  color: #000000;
+}
+
+.cliente-input {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 469px;
+  height: 51px;
+  left: 166px;
+
+  top: 7px;
+
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 8px;
+}
+
+.total-input {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 138px;
+  height: 51px;
+  left: 127px;
+
+  top: 8px;
+
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 8px;
+}
+
+/*tablas*/
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+
+}
+
+table {
+  border-radius: 9px;
+  border: 1px solid #000000;
+  border-collapse: separate;
+
+  border-radius: 15px;
+  border-spacing: 1px;
+  position: absolute;
+  /* left: 67px; */
+  left: 5.5%;
+  top: 441px;
+  width: 1314px;
+
+  height: 400px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+th,
+td {
+  width: 50px;
+  height: 30px;
+}
+
+th {
+  background-color: #E3E3E3;
+}
+
+table tr:nth-child(odd) td {
+  background-color: #E3E3E3;
+
+}
+
+.retroceso {
+  position: absolute;
+  width: 128px;
+  height: 85px;
+  left: 5.5%;
+  top: 90%;
+}
+
+.retroceso span {
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  left: 5.5%;
+  top: 80%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #000000;
+}
+
+@media (max-width: 1412px) {
+  .ventasContenier {
     display: flex;
-    width: 664px;
-    height: 73px;
-    left: 282px;
-    top: 133px;
-  
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
   }
-  
-  .dni-buscar label {
-    position: absolute;
-    width: 131px;
-    height: 33px;
-    left: 496px;
-    top: 52px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-  
-    color: #224E7C;
-  }
-  
-  /*botones para ambos buscar*/
-  .botonBuscar {
-    position: relative;
-    display: flex;
-    top: 19%;
-    left: -2.6%;
-    width: 42px;
-    height: 38px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    background-image: linear-gradient(160deg,
-        #2EE6E3, #E3D214, #2AFA23);
-    transition: .3s;
-  }
-  
-  .botonBuscar:active {
-    scale: 1.1;
-  }
-  
-  /*la caja donde se escriben los datos*/
-  .cajaEscribir {
-    position: relative;
-    width: 580px;
-    height: 30px;
-    left: 26px;
-    top: 17px;
-    border: 1px solid #7E7474;
-    border-radius: 5px;
-  }
-  
-  /*para ambos div*/
-  .iconBuscar {
-    position: relative;
-    width: 38px;
-    height: 34px;
-    top: 1%;
-    left: -5.1px;
-    border-radius: 5px;
-  }
-  
-  /*caja para buscar productos*/
-  .productos-buscar {
-    position: absolute;
-    display: flex;
-    width: 664px;
-    height: 73px;
-    left: 283px;
-    top: 232px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-  }
-  
-  .productos-buscar label {
-    position: absolute;
-    width: 131px;
-    height: 33px;
-    left: 496px;
-    top: 52px;
-  
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-  
-    color: #224E7C;
-  }
-  
+
   .botonesEdicion {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    width: 1119px;
-    height: 82px;
-    left: 125px;
-    top: 321px;
+    width: 80%;
   }
-  
-  .Añadir:active,
-  .genBoleta:active {
-    scale: 1.1;
-    background-image: linear-gradient(160deg,
-        #24d61e, #92D6AA, #24d61e);
-    transition: .3s;
-  }
-  
-  .eliminar:active {
-    scale: 1.1;
-    background-image: linear-gradient(160deg,
-        #aa4649, #D0565A, #a13e41);
-    transition: .3s;
-  }
-  
-  .Añadir {
-    position: absolute;
-    width: 302px;
-    height: 57px;
-    left: 15px;
-    top: 19px;
-    border-color: #92D6AA;
-    background: #98D9AF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-  }
-  
-  .genBoleta {
-    position: absolute;
-    width: 305px;
-    height: 62px;
-    left: 392px;
-    top: 19px;
-    border-color: #92D6AA;
-    background: #98D9AF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-  }
-  
-  .eliminar {
-    position: absolute;
-    width: 305px;
-    height: 62px;
-    left: 761px;
-    top: 19px;
-    border-color: #D0565A;
-    background: #D0565A;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-  }
-  
-  
-  /*Logos*/
-  .logo {
-    position: absolute;
-    width: 128px;
-    height: 96px;
-    left: 1244px;
-    top: 7px;
-    border-radius: 210px;
-  }
-  
-  .logo-tienda {
-    position: absolute;
-    width: 188px;
-    height: 170px;
-    left: 67px;
-    top: 133px;
-  
-    opacity: 0.93;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-  
-  .franja {
-    position: absolute;
-    width: 1319px;
-    height: 8px;
-    left: 67px;
-    top: 114.17px;
-    background: #000000;
-  }
-  
-  .regClientes {
-    position: absolute;
-    width: 404px;
-    height: 54px;
-    left: 111px;
-    top: 51px;
-  
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 54px;
-  
-    color: #000000;
-  }
-  
-  .botonesEdicion img {
-    position: absolute;
-    left: 10.16%;
-    right: 74.1%;
-    top: 11.29%;
-    bottom: 11.29%;
-  
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-  
-  .botonesEdicion .Añadir label,
-  .genBoleta label {
-    position: absolute;
-    left: 40.98%;
-    right: 33.44%;
-    top: 29.03%;
-    bottom: 30.65%;
-  
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-  
-    text-align: center;
-  
-    color: #005C21;
-  
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  .eliminar label {
-    position: absolute;
-    left: 33.77%;
-    right: 33.77%;
-    top: 29.03%;
-    bottom: 30.65%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    text-align: center;
-    color: #810606;
-  
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  /* inputs de abajooo*/
-  
-  .div-cliente {
-    position: absolute;
-    width: 659px;
-    height: 71px;
-    left: 434px;
-    top: 935px;
-  }
-  
-  .div-total {
-    position: absolute;
-  
-    width: 276px;
-    height: 72px;
-    left: 1116px;
-    top: 934px;
-  }
-  
-  .span-abajo {
-    position: absolute;
-    width: 161.36px;
-    height: 42px;
-    left: 26px;
-    top: 12px;
-  
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
-  
-    color: #000000;
-  }
-  
-  .cliente-input {
-    box-sizing: border-box;
-  
-    position: absolute;
-    width: 469px;
-    height: 51px;
-    left: 166px;
-    top: 7px;
-  
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 8px;
-  }
-  
-  .total-input {
-    box-sizing: border-box;
-  
-    position: absolute;
-    width: 138px;
-    height: 51px;
-    left: 127px;
-    top: 8px;
-  
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 8px;
-  }
-  
-  /*tablas*/
-  table {
-    background-color: #8f8b8b;
-    position: absolute;
-    width: 1314px;
-    left: 67px;
-    top: 411px;
-    border-radius: 9px;
-    border: 1px solid #000000;
-    border-collapse: separate;
-    border-spacing: 1;
-  }
-  
-  th,
-  td {
-    border-radius: 1px;
-    border: 1px #000000;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #E3E3E3;
-  }
+}
