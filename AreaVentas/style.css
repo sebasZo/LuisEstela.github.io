@@ -236,7 +236,7 @@ body {
 
 .regClientes {
   position: absolute;
-  width: 404px;
+  width: 364px;
   height: 54px;
   left: 9%;
   top: 51px;
@@ -250,7 +250,7 @@ body {
   color: #000000;
   white-space: nowrap;
   border-right: 4px solid;
-  animation: typing 2s steps(20), blink .5s infinite step-end ;
+  animation: typing 2s steps(100), blink .5s infinite step-end ;
   overflow: hidden;
   transition: .5s;
 }
